@@ -1,0 +1,142 @@
+.nav-tabs {
+  
+  > li {
+    
+    > a:hover,
+    > a:focus { 
+      background:@white;
+      border-color:@white;
+      border-bottom:0;
+      text-decoration:underline;
+    }
+    
+    > a:hover .badge {
+      background:@cerulean15;
+    }
+    
+    &.active > a, 
+    &.active > a:hover, 
+    &.active > a:focus {
+      background:@white;
+      text-decoration:none;
+    }
+    
+  }
+  
+  .badge {
+    background:@cerulean;
+    
+    &:hover {
+      background:@cerulean15;
+    }
+  }
+  
+}
+
+/* custom nav */
+.subnav-simple {
+  background:@white;
+  font-size:14px;
+  line-height:21px;
+  
+  .title {
+    color:@rollingStone;
+    font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+    text-transform:uppercase;
+  }
+  
+  > li  > a {
+    padding:0px;
+    
+    &:hover {
+      background:none;
+      text-decoration:underline;
+    }
+  
+  }
+      
+  > li.active > a {
+    color:#313741;
+    
+    &:hover {
+      cursor:default;
+      text-decoration:none;
+    } 
+    
+  }
+  
+}
+
+
+
+.subnav-main {
+  background:@mystic;
+  font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+  font-size:16px;
+  
+  > li {
+    
+    > a {
+      color:@riverBed;
+      padding-bottom:15px;
+      padding-top:15px;
+      
+      &:hover {
+        background:@pictonBlue;
+        color:@white;
+        
+        .glyphicon {
+          color:@pictonBlue30;
+        }
+        
+      }
+      
+    }
+    
+    &.active > a {
+      background:@white;
+      
+      &:hover {
+        color:@riverBed;
+        cursor:default;
+        background:@white;
+        
+        .glyphicon {
+          color:@riverBed;
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+  .nav {
+    padding-left:0px;
+    
+    > li > a {
+      color:@cerulean;
+      padding-left:40px;
+      
+      &:hover,
+      &:focus {
+        background:@pictonBlue;
+        color:@white;
+      }
+      
+    }
+    
+    > li.active > a {
+      background:@white;
+      
+      &:hover {
+        background:@white;
+        color:@cerulean;
+        cursor:default;
+      }
+      
+    }
+    
+  } 
+  
+}
