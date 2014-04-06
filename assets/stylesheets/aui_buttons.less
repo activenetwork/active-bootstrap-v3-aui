@@ -61,6 +61,7 @@ fieldset[disabled] .btn {
   -webkit-box-shadow: none;
   		  box-shadow: none;
 }
+<<<<<<< HEAD
 .btn-default:active,
 .btn-primary:active,
 .btn-success:active,
@@ -89,19 +90,47 @@ fieldset[disabled] .btn {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   text-shadow:none;
+=======
+.btn-default {
+  background:@colorTheme5;
+  background-image: none;
+  background-repeat: none;
+  border-color: @colorTheme5Darken5;
+  color:@colorTheme6;
+  filter: none;
+  text-shadow:none;
+  
+  &:active,
+  &.active {
+    background-color: @colorTheme5Darken10;
+    border-color: @colorTheme5Darken15;
+  }
+  
+>>>>>>> fbc253f... add commonly named theme colors
 }
 .btn-default:hover,
 .btn-default:focus,
 .open .dropdown-toggle.btn-default {
+<<<<<<< HEAD
   background-image: -webkit-linear-gradient(top, #CDD5D8 0%, #CDD5D8 100%);
   background-image:         linear-gradient(to bottom, #CDD5D8 0%, #CDD5D8 100%);
+=======
+  background:@colorTheme5Darken10;
+  background-image: none;
+>>>>>>> fbc253f... add commonly named theme colors
   background-position: 0;
   background-repeat: repeat-x;
   box-shadow:none;
+<<<<<<< HEAD
   color:#67757B;
   border-color: #C0C8CB;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CDD5D8ff', endColorstr='#CDD5D8e0', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+=======
+  color:@colorTheme6;
+  border-color: @colorTheme5Darken15;
+  filter: none;
+>>>>>>> fbc253f... add commonly named theme colors
   text-shadow:none;
 }
 .btn-default:active,
@@ -123,6 +152,7 @@ fieldset[disabled] .btn-default:focus,
 fieldset[disabled] .btn-default:active, 
 .btn-default.disabled.active, .btn-default.active[disabled], 
 fieldset[disabled] .btn-default.active {
+<<<<<<< HEAD
   background-color: #e6eef1;
   border-color: #D9E1E4;
   color:rgba(49,55,65,0.45);
@@ -151,6 +181,36 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active {
   background-color: #D75500;
   border-color: #CA4800;
+=======
+  background-color: @colorTheme5;
+  border-color: @colorTheme5Darken5;
+  color:rgba(49,55,65,0.45);
+}
+.btn-primary {
+  background:@colorTheme3;
+  background-image: none;
+  background-repeat: none;
+  border-color: @colorTheme3Darken5;
+  filter: none;
+  
+  &:active,
+  &.active {
+    background-color: @colorTheme3Darken10;
+    border-color: @colorTheme3Darken15;
+  }
+  
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.open .dropdown-toggle.btn-primary {
+  background:@colorTheme3Darken10;
+  background-image: none;
+  background-repeat: none;
+  background-position:0;
+  border-color: @colorTheme3Darken15;
+  color:@colorTheme4;
+  filter: none;
+>>>>>>> fbc253f... add commonly named theme colors
 }
 .btn-primary.disabled, 
 .btn-primary[disabled], 
@@ -166,8 +226,13 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:active, 
 .btn-primary.disabled.active, .btn-primary.active[disabled], 
 fieldset[disabled] .btn-primary.active {
+<<<<<<< HEAD
   background-color: #f06e17;
   border-color: #E3610A;
+=======
+  background-color: @colorTheme3;
+  border-color: @colorTheme3Darken5;
+>>>>>>> fbc253f... add commonly named theme colors
   color:rgba(255,255,255,0.45);
 }
 .btn-success {
@@ -189,6 +254,7 @@ fieldset[disabled] .btn-primary.active {
   border-color: #3e8f3e;
 }
 .btn-info {
+<<<<<<< HEAD
   background-image: -webkit-linear-gradient(top, #4DBDE9 0%, #4DBDE9 100%);
   background-image:         linear-gradient(to bottom, #4DBDE9 0%, #4DBDE9 100%);
   background-repeat: repeat-x;
@@ -211,6 +277,31 @@ fieldset[disabled] .btn-primary.active {
 .btn-info.active {
   background-color: #2aabd2;
   border-color: #28a4c9;
+=======
+  background:@colorTheme1;
+  background-image: none;
+  background-repeat: none;
+  border-color: @colorTheme1Darken5;
+  filter: none;
+  
+  &:active,
+  &.active {
+    background-color: @colorTheme1Darken10;
+    border-color: @colorTheme1Darken15;
+  }
+  
+}
+.btn-info:hover,
+.btn-info:focus,
+.open .dropdown-toggle.btn-info {
+  background:@colorTheme1Darken10;
+  background-image: none;
+  background-repeat: none;
+  background-position: 0;
+  border-color: @colorTheme1Darken15;
+  color:@colorTheme4;
+  filter: none;
+>>>>>>> fbc253f... add commonly named theme colors
 }
 .btn-info.disabled, 
 .btn-info[disabled], 
@@ -226,8 +317,13 @@ fieldset[disabled] .btn-info:focus,
 fieldset[disabled] .btn-info:active, 
 .btn-info.disabled.active, .btn-info.active[disabled], 
 fieldset[disabled] .btn-info.active {
+<<<<<<< HEAD
   background-color: #4DBDE9;
   border-color: #40B0DC;
+=======
+  background-color: @colorTheme1;
+  border-color: @colorTheme1Darken5;
+>>>>>>> fbc253f... add commonly named theme colors
   color:rgba(255,255,255,0.45);
 }
 .btn-warning {

@@ -47,8 +47,12 @@
   left: 100%;
 }
 .carousel-control {
+<<<<<<< HEAD
   bottom: 0;
   color:#313741;
+=======
+  color:@colorTheme6;
+>>>>>>> fbc253f... add commonly named theme colors
   filter: alpha(opacity=100);
   font-size: 20px;
   left: 0;
@@ -56,6 +60,7 @@
   position: absolute;
   text-align: center;
   text-shadow: none;
+<<<<<<< HEAD
   top: 0;
   width: 15%;
 }
@@ -153,3 +158,53 @@
 .carousel-caption .btn {
   text-shadow: none;
 }
+=======
+  
+  &.left {
+    background-image: none;
+    background-repeat: none;
+    filter: none;
+  }
+  
+  &.right {
+    background-image: none;
+    background-repeat: none;
+    filter: none;
+    left: auto;
+    right: 0;
+  }
+  
+  &:hover,
+  &:focus {
+    color: @colorTheme4;
+    filter: alpha(opacity=100);
+    opacity: 100;
+    outline: none;
+    text-decoration: none;
+  }
+
+}
+
+.carousel-indicators {
+  
+  li {
+    background-color: @colorTheme6;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 10px;
+  }
+  
+  .active {
+    background-color: @colorTheme1;
+    height: 10px;
+    margin: 1px;
+    width: 10px;
+  }
+  
+} 
+>>>>>>> fbc253f... add commonly named theme colors

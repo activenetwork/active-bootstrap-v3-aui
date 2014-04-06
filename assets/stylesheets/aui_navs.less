@@ -4,8 +4,8 @@
     
     > a:hover,
     > a:focus { 
-      background:@white;
-      border-color:@white;
+      background:@colorTheme4;
+      border-color:@colorTheme4;
       border-bottom:0;
       text-decoration:underline;
     }
@@ -17,7 +17,7 @@
     &.active > a, 
     &.active > a:hover, 
     &.active > a:focus {
-      background:@white;
+      background:@colorTheme4;
       text-decoration:none;
     }
     
@@ -35,7 +35,7 @@
 
 /* custom nav */
 .subnav-simple {
-  background:@white;
+  background:@colorTheme4;
   font-size:14px;
   line-height:21px;
   
@@ -70,23 +70,23 @@
 
 
 .subnav-main {
-  background:@mystic;
+  background:@colorTheme5;
   font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
   font-size:16px;
   
   > li {
     
     > a {
-      color:@riverBed;
+      color:@colorTheme6;
       padding-bottom:15px;
       padding-top:15px;
       
       &:hover {
-        background:@pictonBlue;
-        color:@white;
+        background:@colorTheme1;
+        color:@colorTheme4;
         
         .glyphicon {
-          color:@pictonBlue30;
+          color:@colorTheme1Darken30;
         }
         
       }
@@ -94,15 +94,15 @@
     }
     
     &.active > a {
-      background:@white;
+      background:@colorTheme4;
       
       &:hover {
-        color:@riverBed;
+        color:@colorTheme6;
         cursor:default;
-        background:@white;
+        background:@colorTheme4;
         
         .glyphicon {
-          color:@riverBed;
+          color:@colorTheme6;
         }
         
       }
@@ -120,17 +120,17 @@
       
       &:hover,
       &:focus {
-        background:@pictonBlue;
-        color:@white;
+        background:@colorTheme1;
+        color:@colorTheme4;
       }
       
     }
     
     > li.active > a {
-      background:@white;
+      background:@colorTheme4;
       
       &:hover {
-        background:@white;
+        background:@colorTheme4;
         color:@cerulean;
         cursor:default;
       }
