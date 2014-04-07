@@ -1,42 +1,48 @@
 .badge {
-  background-color: @colorTheme1;
+  background-color: @cerulean;
   border-radius: 2px;
-  color: @colorTheme4;
+  color: #fff;
   display: inline-block;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: normal;
   height:18px;
   line-height: 1;
   margin-left:10px;
   min-width: 10px;
-  padding: 3px 3px;
+  padding: 3px 4px;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
 }
-.badge:empty {
-  display: none;
-}
-.btn .badge {
-  position: relative;
-  top: -1px;
-}
-.btn-xs .badge {
-  top: 0;
-  padding: 1px 5px;
-}
-a.badge:hover,
-a.badge:focus {
-  color:@colorTheme4;
-  cursor: pointer;
-  background:@colorTheme1Darken15;
-  text-decoration: none;
-}
-a.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
-  background-color: #fff;
-  color: #428bca;
-}
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
+
+a.badge {
+  
+  &:hover,
+  &:focus {
+    color:#fff;
+    cursor: pointer;
+    background:@ceruleanDarken15;
+    text-decoration: none;
+  }
+  
+  &.edit {
+    background:@rollingStone;
+    
+    .delete {
+      color:#a5adb1;
+      font-weight:bold;
+    }
+    
+    &:hover,
+    &:focus {
+      background:@rollingStoneDarken15;
+      
+      .delete {
+        color:#a5adb1;
+        font-weight:bold;
+      }
+      
+    }
+  }
+  
 }
