@@ -1,0 +1,147 @@
+.nav-tabs {
+  
+  > li {
+    
+    > a:hover,
+    > a:focus { 
+      background:@colorTheme4;
+      border-color:@colorTheme4;
+      border-bottom:0;
+      text-decoration:underline;
+    }
+    
+    > a:hover .badge {
+      background:@ceruleanDarken15;
+    }
+    
+    &.active > a, 
+    &.active > a:hover, 
+    &.active > a:focus {
+      background:@colorTheme4;
+      text-decoration:none;
+    }
+    
+  }
+  
+  .badge {
+    background:@cerulean;
+    
+    &:hover {
+      background:@ceruleanDarken15;
+    }
+  }
+  
+}
+
+/* custom nav */
+.subnav-simple {
+  background:@colorTheme4;
+  font-size:14px;
+  line-height:21px;
+  
+  .title {
+    color:@rollingStone;
+    font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+    text-transform:uppercase;
+  }
+  
+  > li  > a {
+    padding:0px;
+    
+    &:hover {
+      background:none;
+      text-decoration:underline;
+    }
+  
+  }
+      
+  > li.active > a {
+    color:#313741;
+    
+    &:hover {
+      cursor:default;
+      text-decoration:none;
+    } 
+    
+  }
+  
+}
+
+
+
+.subnav-main {
+  background:@colorTheme5;
+  font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+  font-size:16px;
+  
+  > li {
+    
+    > a {
+      color:@colorTheme6;
+      padding-bottom:15px;
+      padding-top:15px;
+      
+      &:hover {
+        background:@colorTheme1;
+        color:@colorTheme4;
+        
+        .glyphicon {
+          color:@colorTheme1Darken30;
+        }
+        
+      }
+      
+    }
+    
+    &.active > a {
+      background:@colorTheme4;
+      color:@colorTheme1;
+        
+      .glyphicon {
+        color:@colorTheme1;
+      }
+      
+      &:hover {
+        color:@colorTheme1;
+        cursor:default;
+        background:@colorTheme4;
+        
+        .glyphicon {
+          color:@colorTheme1;
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+  .nav {
+    padding-left:0px;
+    
+    > li > a {
+      color:@colorTheme1;
+      padding-left:40px;
+      
+      &:hover,
+      &:focus {
+        background:@colorTheme1;
+        color:@colorTheme4;
+      }
+      
+    }
+    
+    > li.active > a {
+      background:@colorTheme4;
+      
+      &:hover {
+        background:@colorTheme4;
+        color:@colorTheme1;
+        cursor:default;
+      }
+      
+    }
+    
+  } 
+  
+}

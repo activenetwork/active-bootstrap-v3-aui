@@ -1,0 +1,48 @@
+.badge {
+  background-color: @cerulean;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  height:18px;
+  line-height: 1;
+  margin-left:10px;
+  min-width: 10px;
+  padding: 3px 4px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+a.badge {
+  
+  &:hover,
+  &:focus {
+    color:#fff;
+    cursor: pointer;
+    background:@ceruleanDarken15;
+    text-decoration: none;
+  }
+  
+  &.edit {
+    background:@rollingStone;
+    
+    .delete {
+      color:#a5adb1;
+      font-weight:bold;
+    }
+    
+    &:hover,
+    &:focus {
+      background:@rollingStoneDarken15;
+      
+      .delete {
+        color:#a5adb1;
+        font-weight:bold;
+      }
+      
+    }
+  }
+  
+}
