@@ -145,3 +145,58 @@
   } 
   
 }
+
+ul.progress-steps {
+  display:inline-block;
+  font-size:16px;
+  height:40px;
+  list-style:none;
+  margin:0 auto;
+  padding:0px;
+  width:auto;
+  
+  li {
+    background:@colorTheme5 url(images/step-right.png) top right no-repeat;
+    border-bottom:1px solid @ghost;
+    border-top:1px solid @ghost;
+    color:@ghost;
+    display:inline-block;
+    line-height:38px;
+    margin:0 -5px 0 0;
+    padding:0 40px 0 20px;
+    
+    &.current {
+      background:@colorTheme1 url(images/step-current-right.png) top right no-repeat;
+      color:@colorTheme4;
+      
+      &:last-child {
+        background:@colorTheme1;
+      }
+      
+    }
+    
+    &.past {
+      background:@colorTheme4 url(images/step-past.png) top right no-repeat;
+    }
+    
+    &.past-past {
+      background:@colorTheme4 url(images/step-past-past.png) top right no-repeat;
+    }
+    
+    &:first-child {
+      border-left:1px solid @ghost;
+      border-bottom-left-radius:5px;
+      border-top-left-radius:5px;
+    }
+    
+    &:last-child {
+      background:@colorTheme5;
+      border-right:1px solid @ghost;
+      border-bottom-right-radius:5px;
+      border-top-right-radius:5px;
+      padding:0 20px 0 20px;
+    }
+    
+  }
+  
+}
