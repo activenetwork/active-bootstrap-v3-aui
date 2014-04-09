@@ -1,17 +1,59 @@
-.control-lable {
+.control-label {
     padding-right:0px;
     padding-left:0px;
+
 }
 
 .form-control {
-    height:30px;
-    width:200px;
+    height: 30px;
+    border-color:#DDD;
+    &:hover {
+      border-color:#CCC;
+    }
 }
 
-.label-required:after {
-    content:"*";
-    color:@alertRed;
-    padding-left:5px;
+.form-group {
+    .glyphicon-question-sign {
+	color:@colorTheme1;
+    }
+
 }
 
+.has-error {
+    .form-control  {
+        font-size:16px;
+        background-color: @alertRedBg;
+        color: @alertRed;
+        border: solid 1px @alertRedBorder;
+    }
+    > span {
+        font-size:14px;
+        color: @alertRed;
+    } 
+}
+
+.has-warning {
+    .form-control  {
+        font-size:16px;
+        background-color: @alertOrangeBg;
+        color: @alertOrange;
+        border: solid 1px @alertOrangeBorder;
+    }
+    > span {
+        font-size:14px;
+        color: @alertOrange;
+    } 
+} 
+
+.has-success {
+    .form-control  {
+        font-size:16px;
+        color: @alertGreen;
+        border: solid 1px @alertGreenBorder;
+    }
+    > span {
+        font-size:14px;
+        color: @alertGreen;
+    } 
+} 
 

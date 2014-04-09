@@ -1,31 +1,53 @@
-.checkbox.small{
-	font-size:14px;
-	font-weight:normal;
-	color:@riverBed;
+.add-on {
+    height:24px;
+    width:24px;
+    padding-top:7px;
+    padding-bottom:2px;
 }
 
-.input-group-inner-addon {
-    position:relative;
+
+.add-on-group-inner {
+    position: relative;
+    > input {
+	 padding-left: 35px; 
+      }
+    > i {
+         position: absolute;
+         pointer-events: none;
+         padding-left:10px;
+         padding-right:10px;
+	.add-on
+    }
 }
 
-.input-group-inner-addon input {
-    padding-left:35px;
+.textinput-checkbox{
+    color:@colorTheme6;
 }
 
-.input-group-inner-addon i {
-    position:absolute;
-    padding:7px 12px;
-    pointer-events:none;
+.inputs-small {
+        font-size:14px;
+        font-weight:normal;
+}
+
+.label-required:after {
+                color:@alertRed*;
+                content: "*";
+                padding-left:5px;
 }
 
 .help-block {
-    font-size:14px;
     font-style:italic;
+    color:@colorTheme6;
 }
 
-.glyphicon-question-sign {
-    padding-top:7px;
-    color:@cerulean;
+.tag-input {
+   padding:4px 5px 4px 5px;
+   .badge{
+       margin:0;
+      &:after {
+       content: " x";
+     }
+   }
+
+
 }
-
-
