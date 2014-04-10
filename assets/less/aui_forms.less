@@ -63,6 +63,9 @@
 .has-feedback {
   position:relative;
   
+  .form-control {
+    padding-right:28px;
+  }
   .form-control-feedback {
     display: block;
     height: 34px;
@@ -76,6 +79,11 @@
   
   .glyphicon-remove-sign {
     color:@rollingStone;
+    display:none;
+    
+    &:hover {
+      cursor:pointer;
+    }
   }
   
 }
