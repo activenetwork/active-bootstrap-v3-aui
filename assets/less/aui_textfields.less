@@ -23,10 +23,17 @@
 .tag-input {
    padding:4px 5px 4px 5px;
    .badge{
+       background:@rollingStone;
        margin:0;
       &:after {
+       color:#a5adb1;
        content: " x";
-     }
+      }
+      &:hover,
+      &:focus {
+        background:@rollingStoneDarken15;
+        cursor:pointer;
+      }
    }
 }
 
