@@ -6,7 +6,7 @@
 
 .form-control {
     height: 30px;
-    border-color:#DDD;
+    border-color:@grayMedium;
     &:hover {
       border-color:#CCC;
     }
@@ -16,8 +16,11 @@
     .glyphicon-question-sign {
 	color:@colorTheme1;
     }
-
+     .glyphicon-chevron-down {
+         color:@cerulean;
+    }
 }
+
 
 .has-error {
     .form-control  {
@@ -56,4 +59,55 @@
         color: @alertGreen;
     } 
 } 
+
+.page-error {
+        font-size:16px;
+        background-color: @alertRedBg;
+        color: @alertRed;
+        border: solid 1px @alertRedBorder;
+
+}
+
+.page-error label {
+    padding:5px;
+}
+
+.page-error ul {
+    font-size:16px;
+
+}
+
+.inputs-small {
+        font-size:14px;
+        font-weight:normal;
+}
+
+.input-field-size-sm {
+	width:45px;
+}
+
+.input-field-size-md {
+	width:75px;
+}
+
+.input-field-size-lg {
+	width:275px;
+}
+
+.input-field-size-xl {
+	width:350px;
+}
+
+
+.label-required:after {
+                color:@alertRed*;
+                content: "*";
+                padding-left:5px;
+}
+
+.help-block {
+    font-style:italic;
+    color:@colorTheme6;
+}
+
 
