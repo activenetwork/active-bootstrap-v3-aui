@@ -1,18 +1,20 @@
 
-.select-label {
+.select {
     border-color:@grayMedium;
-    .left {
+    .left-label {
         float:left;
+    }
+    .glyphicon-chevron-down {
+       float:right
     }
 }
 
-.select-label-arrow {
-    float:right;
-}
+.dropdown-menu {
+         .form-control {
+		border:none;
+		border-radius:0;
+    	 }
 
-.select-button {
-    height:30px;
-    width:160px;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -37,4 +39,13 @@ input[type="checkbox"], input[type="radio"] {
     margin-right:5px;
 }
 
+.radio:before {
+    content:"";
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border:solid 1px @grayMedium;
+    margin-right:5px;
+    border-radius:25px;
+}
 
