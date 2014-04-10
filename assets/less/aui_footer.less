@@ -53,14 +53,36 @@
     font-weight:bold;
   }
   
-  a:hover,
-  .nav > li > a {
+  a {
     
     &:hover,
-    &:focus {
-      background:none;
-      color:#f5ba46;
-      text-decoration:underline;
+    .nav > li > a {
+      
+      &:hover,
+      &:focus {
+        background:none;
+        color:#f5ba46;
+        text-decoration:underline;
+      }
+    
+    }
+    
+    &.network-logo,
+    &.network-logo:hover {
+      background:url(/assets/sprite-logos.png) 0 -105px no-repeat;
+      display:inline-block;
+      font-size:0px;
+      height:30px;
+      width:106px;
+    }
+    
+    &.product-logo,
+    &.product-logo:hover {
+      background:url(/assets/sprite-logos.png) 0 -105px no-repeat;
+      display:inline-block;
+      font-size:0px;
+      height:21px;
+      width:106px;
     }
     
   }
