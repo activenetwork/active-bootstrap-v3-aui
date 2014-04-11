@@ -60,6 +60,42 @@
     } 
 } 
 
+.has-feedback {
+  position:relative;
+  
+  .form-control {
+    padding-right:28px;
+  }
+  .form-control-feedback {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -1px;
+    width: 34px;  
+  }
+  
+  .glyphicon-remove-sign {
+    color:@rollingStone;
+    display:none;
+    
+    &:hover {
+      cursor:pointer;
+    }
+  }
+  
+}
+
+.add-on-group-inner {
+  
+  .glyphicon-search {
+    color:@rollingStone;
+  }
+  
+}
+
 .page-error {
         font-size:16px;
         background-color: @alertRedBg;

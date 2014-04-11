@@ -20,13 +20,40 @@
     }
 }
 
+.input-group-addon.dropdown-addon {
+  background:@colorTheme5;
+  padding:0 8px;
+ 
+  a.dropdown-toggle {
+    color:@ghost;
+
+    &:hover,
+    &:focus {
+      color:@ghost;
+    }
+  }
+  
+  .dropdown-menu {
+    margin: 10px 0px 0px -8px;
+    text-align:left;
+  }
+  
+}
+
 .tag-input {
    padding:4px 5px 4px 5px;
    .badge{
+       background:@rollingStone;
        margin:0;
       &:after {
+       color:#a5adb1;
        content: " x";
-     }
+      }
+      &:hover,
+      &:focus {
+        background:@rollingStoneDarken15;
+        cursor:pointer;
+      }
    }
 }
 
