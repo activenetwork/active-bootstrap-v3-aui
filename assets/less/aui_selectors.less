@@ -4,9 +4,22 @@
     .left-label {
         float:left;
     }
-    .glyphicon-chevron-down {
-       float:right
+    .glyphicon-chevron-toggle {
+       float:right;
+       color:@cerulean;
     }
+}
+
+.btn-group.open .dropdown-toggle {
+    background-color:@colorTheme5;
+}
+
+.btn-group.open .dropdown-toggle .glyphicon-chevron-toggle:before {
+    content:"\e113";
+}
+
+.btn-group .dropdown-toggle .glyphicon-chevron-toggle:before {
+    content:"\e114";
 }
 
 .dropdown-menu {
@@ -61,6 +74,92 @@ input[type="checkbox"]:checked + label:before {
     content:"\e013";
     color:@cerulean;
     font-family:'Glyphicons Halflings';
+}input[type="checkbox"], input[type="radio"] {
+	display:none;
+ }
+
+.checkbox, .radio {
+	padding-left:0;
+}
+
+.checkbox label:before {
+    content:"";
+    display:inline-block;
+    width:23px;
+    height:23px;
+    vertical-align:middle;
+    line-height:23px;
+    text-align:center;
+    border:solid 1px @grayMedium;
+    border-radius:4px;
+    margin-right:5px;
+    margin-left:0;
+}
+
+.input-sm.checkbox  {
+	>label:before {
+ 		width:14px;
+   		height:14px;
+		line-height:14px;
+
+	}
+}
+
+.input-lg.checkbox  {
+	>label:before {
+ 		width:30px;
+   		height:30px;
+		line-height:30px;
+
+	}
+}
+
+
+input[type="checkbox"]:checked + label:before {
+    content:"\e013";
+    color:@cerulean;
+    font-family:'Glyphicons Halflings';
+}
+
+.radio label:before {
+    content:"";
+    display:inline-block;
+    width:25px;
+    height:25px;
+    vertical-align:middle;
+    line-height:16px;
+    text-align:center;
+    font-size:48px;
+    border:solid 1px @grayMedium;
+    border-radius:25px;
+    margin-right:5px;
+}
+
+.input-sm.radio  {
+	>label:before {
+ 		width:14px;
+   		height:14px;
+		font-size:20px;
+		line-height:8px;
+
+	}
+}
+
+.input-lg.radio  {
+	>label:before {
+ 		width:30px;
+   		height:30px;
+		font-size:66px;
+		line-height:18px;
+
+	}
+}
+
+
+input[type="radio"]:checked + label:before {
+    content:"\2022";
+    color:@cerulean;
+
 }
 
 .radio label:before {
