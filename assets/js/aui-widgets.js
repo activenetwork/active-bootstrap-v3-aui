@@ -1,3 +1,3 @@
 $(function(){
-  console.log('loaded');
+  console.log('loaded aui-widgets.js file');
 });
