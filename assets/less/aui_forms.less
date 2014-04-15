@@ -22,8 +22,9 @@
 }
 
 .input-group-inline {
-   display:inline-block;
-   padding-right:0;
+   > div {
+		display:inline-block;
+	}
 }
 
 .has-error {
@@ -130,17 +131,16 @@
 }
 
 .input-field-size-md {
-	width:130px;
+	width:110px;
 }
 
 .input-field-size-lg {
-	width:230px;
+	width:180px;
 }
 
 .input-field-size-xl {
-	width:320px;
+	width:300px;
 }
-
 
 .label-required:after {
                 color:@alertRed*;
