@@ -10,14 +10,15 @@
     &:hover {
       border-color:#CCC;
     }
+
 }
 
 .form-group {
     .glyphicon-question-sign {
-	color:@colorTheme1;
+	    color:@colorTheme1;
     }
-     .glyphicon-chevron-down {
-         color:@cerulean;
+    .glyphicon-chevron-down {
+       color:@cerulean;
     }
 }
 
@@ -76,10 +77,15 @@
     height: 34px;
     line-height: 34px;
     position: absolute;
-    right: 0;
+    right: -2px;
     text-align: center;
     top: -1px;
     width: 34px;  
+    
+    &.font-md {
+      right:2px;
+      top: 4px;
+    }
   }
   
   .glyphicon-remove-sign {
@@ -91,7 +97,6 @@
   }
   
 }
-
 .add-on-group-inner {
   
   .glyphicon-search {
