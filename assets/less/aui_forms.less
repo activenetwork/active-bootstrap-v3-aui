@@ -1,7 +1,10 @@
 .control-label {
     padding-right:0px;
     padding-left:0px;
-
+    &.center-xsmall {
+	text-align:center;
+	width:30px;
+    }
 }
 
 .form-control {
@@ -10,20 +13,22 @@
     &:hover {
       border-color:#CCC;
     }
+
 }
 
 .form-group {
     .glyphicon-question-sign {
-	color:@colorTheme1;
+	    color:@colorTheme1;
     }
-     .glyphicon-chevron-down {
-         color:@cerulean;
+    .glyphicon-chevron-down {
+       color:@cerulean;
     }
 }
 
 .input-group-inline {
-   display:inline-block;
-   padding-right:0;
+   > div {
+		display:inline-block;
+	}
 }
 
 .has-error {
@@ -75,10 +80,15 @@
     height: 34px;
     line-height: 34px;
     position: absolute;
-    right: 0;
+    right: -2px;
     text-align: center;
     top: -1px;
     width: 34px;  
+    
+    &.font-md {
+      right:2px;
+      top: 4px;
+    }
   }
   
   .glyphicon-remove-sign {
@@ -90,7 +100,6 @@
   }
   
 }
-
 .add-on-group-inner {
   
   .glyphicon-search {
@@ -130,17 +139,16 @@
 }
 
 .input-field-size-md {
-	width:130px;
+	width:110px;
 }
 
 .input-field-size-lg {
-	width:230px;
+	width:180px;
 }
 
 .input-field-size-xl {
-	width:320px;
+	width:300px;
 }
-
 
 .label-required:after {
                 color:@alertRed*;

@@ -20,29 +20,38 @@
     }
 }
 
-.input-group-addon.dropdown-addon {
-  background:@colorTheme5;
-  padding:0;
- 
-  a.dropdown-toggle {
+.input-group-btn {
+  
+  .dropdown-toggle.btn-default {
+    background:@colorTheme5;
+    border-color:#ccc;
     color:#ccc;
-    display:block;
     font-size:16px;
-    height:28px;
-    line-height:28px;
+    min-width:28px;
     width:28px;
 
     &:hover,
     &:focus {
+      background:@colorTheme5;
+      border-color:#ccc;
       color:#ccc;
     }
   }
   
   .dropdown-menu {
-    margin: 10px 0px 0px -1px;
+    margin: 10px 0px 0px 0px;
     text-align:left;
   }
   
+}
+
+.open .dropdown-toggle.btn-default {
+  &:hover,
+  &:focus {
+    background:@colorTheme5;
+    color:#ccc;
+    outline: 0;
+  }
 }
 
 .tag-input {

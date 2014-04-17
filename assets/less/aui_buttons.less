@@ -75,7 +75,7 @@ fieldset[disabled] .btn {
 }
 .btn-default:hover,
 .btn-default:focus,
-.open .dropdown-toggle.btn-default {
+.open .dropdown-toggle.btn-default:focus {
   background:@colorTheme5Darken10;
   background-image: none;
   background-position: 0;
@@ -84,6 +84,9 @@ fieldset[disabled] .btn {
   border-color: @colorTheme5Darken15;
   filter: none;
   text-shadow:none;
+}
+.open .dropdown-toggle.btn-default:focus {
+  box-shadow:none;
 }
 .btn-default.disabled, 
 .btn-default[disabled], 
