@@ -1,13 +1,21 @@
 .select {
   border-color:@grayMedium;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    border-color:@grayCCC;  
+  }
     
   .left-label {
     float:left;
   }
   
   .glyphicon-chevron-toggle {
-     float:right;
      color:@cerulean;
+     float:right;
+     margin-top:3px;
+     margin-right:-5px;
   }
   
   &.select-gradient {
@@ -25,6 +33,7 @@
       background: -moz-linear-gradient(@colorTheme5, @colorTheme4);
       background: linear-gradient(@colorTheme5, @colorTheme4);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@colorTheme5, endColorstr=@colorTheme4);
+      border-color:@grayCCC;
     }
   }
   
