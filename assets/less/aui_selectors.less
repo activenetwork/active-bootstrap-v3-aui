@@ -67,6 +67,19 @@
   
 }
 
+.form-horizontal .control-label.input-lg {
+  padding-top:8px;
+  
+  &.radio-label,
+  &.checkbox-label {
+    padding-top:4px;
+  }
+}
+
+.form-horizontal .control-label.input-sm {
+  padding-left:15px;
+}
+
 .btn-group {
   
   &.open .dropdown-toggle {
@@ -161,3 +174,9 @@ input[type="radio"]:checked + label:before {
   content:"\2022";
 }
 
+@media (min-width: 768px) {
+  
+  .form-horizontal .control-label.input-sm {
+    padding-left:0px;
+  }
+}
