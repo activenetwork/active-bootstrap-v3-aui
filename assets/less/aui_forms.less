@@ -1,72 +1,91 @@
 .control-label {
-    padding-right:0px;
-    padding-left:0px;
-    &.center-xsmall {
-	text-align:center;
-	width:30px;
-    }
+  padding-right:0px;
+  padding-left:0px;
+  
+  &.center-xsmall {
+	  text-align:center;
+	  width:30px;
+  }
+  
 }
 
 .form-control {
-    height: 30px;
+  border-color:@grayMedium;
+  height: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+          transition: none;
+  &:hover,
+  &:active,
+  &:focus {
     border-color:@grayMedium;
-    &:hover {
-      border-color:#CCC;
-    }
+  }
 
 }
 
 .form-group {
-    .glyphicon-question-sign {
-	    color:@colorTheme1;
-    }
-    .glyphicon-chevron-down {
-       color:@cerulean;
-    }
+  
+  .glyphicon-question-sign {
+    color:@colorTheme1;
+  }
+  .glyphicon-chevron-down {
+    color:@cerulean;
+  }
 }
 
 .input-group-inline {
-   > div {
+  
+  > div {
 		display:inline-block;
 	}
 }
 
 .has-error {
-    .form-control  {
-        font-size:16px;
-        background-color: @alertRedBg;
-        color: @alertRed;
-        border: solid 1px @alertRedBorder;
-    }
-    > span {
-        font-size:14px;
-        color: @alertRed;
-    } 
+  
+  .form-control  {
+    background-color: @alertRedBg;
+    border: solid 1px @alertRedBorder;
+    color: @alertRed;
+    font-size:16px;
+  }
+  
+  > span {
+    color: @alertRed;
+    font-size:14px;
+  } 
+  
 }
 
 .has-warning {
-    .form-control  {
-        font-size:16px;
-        background-color: @alertOrangeBg;
-        color: @alertOrange;
-        border: solid 1px @alertOrangeBorder;
-    }
-    > span {
-        font-size:14px;
-        color: @alertOrange;
-    } 
+  
+  .form-control  {
+    background-color: @alertOrangeBg;
+    border: solid 1px @alertOrangeBorder;
+    color: @alertOrange;
+    font-size:16px;
+  }
+  
+  > span {
+    color: @alertOrange;
+    font-size:14px;
+  }
+   
 } 
 
 .has-success {
-    .form-control  {
-        font-size:16px;
-        color: @alertGreen;
-        border: solid 1px @alertGreenBorder;
-    }
-    > span {
-        font-size:14px;
-        color: @alertGreen;
-    } 
+  
+  .form-control  {
+    border: solid 1px @alertGreenBorder;
+    color: @alertGreen;
+    font-size:16px;
+  }
+  
+  > span {
+    color: @alertGreen;
+    font-size:14px;
+  } 
+  
 } 
 
 .has-feedback {
@@ -109,25 +128,23 @@
 }
 
 .page-error {
-        font-size:16px;
-        background-color: @alertRedBg;
-        color: @alertRed;
-        border: solid 1px @alertRedBorder;
-
+  background-color: @alertRedBg;
+  border: solid 1px @alertRedBorder;
+  color: @alertRed;
+  font-size:16px;
 }
 
 .page-error label {
-    padding:5px;
+  padding:5px;
 }
 
 .page-error ul {
-    font-size:16px;
-
+  font-size:16px;
 }
 
 .inputs-small {
-        font-size:14px;
-        font-weight:normal;
+  font-size:14px;
+  font-weight:normal;
 }
 
 .input-field-size-xs {
@@ -151,14 +168,12 @@
 }
 
 .label-required:after {
-                color:@alertRed*;
-                content: "*";
-                padding-left:5px;
+  color:@alertRed*;
+  content: "*";
+  padding-left:5px;
 }
 
 .help-block {
-    font-style:italic;
-    color:@colorTheme6;
+  color:@colorTheme6;
+  font-style:italic;
 }
-
-

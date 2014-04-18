@@ -1,23 +1,22 @@
 .add-on {
-    height:24px;
-    width:24px;
-    padding-top:7px;
-    padding-bottom:2px;
+  height:24px;
+  padding-top:7px;
+  padding-bottom:2px;
+  width:24px;
 }
 
-
 .add-on-group-inner {
-    position: relative;
-    > input {
-	 padding-left: 35px; 
-      }
-    > i {
-         position: absolute;
-         pointer-events: none;
-         padding-left:10px;
-         padding-right:10px;
-	.add-on
-    }
+  position: relative;
+  
+  > input {
+    padding-left: 35px; 
+  }
+  
+  > i {
+    position: absolute;
+    pointer-events: none;
+    padding:5px 10px;
+  }
 }
 
 .input-group-btn {
@@ -46,33 +45,40 @@
 }
 
 .open .dropdown-toggle.btn-default {
+  
   &:hover,
   &:focus {
     background:@colorTheme5;
-    color:#ccc;
+    color:@grayCCC;
     outline: 0;
   }
+  
 }
 
 .tag-input {
-   padding:4px 5px 4px 5px;
-   .badge{
-       background:@rollingStone;
-       margin:0;
-      &:after {
-       color:#a5adb1;
-       content: " x";
-      }
-      &:hover,
-      &:focus {
-        background:@rollingStoneDarken15;
-        cursor:pointer;
-      }
-   }
+  padding:4px 5px 4px 5px;
+  
+  .badge {
+    background:@rollingStone;
+    margin:0;
+     
+    &:after {
+      color:#a5adb1;
+      content: " x";
+    }
+      
+    &:hover,
+    &:focus {
+      background:@rollingStoneDarken15;
+      cursor:pointer;
+    }
+    
+  }
+  
 }
 
 .textinput-checkbox{
-    color:@colorTheme6;
+  color:@colorTheme6;
 }
 
 

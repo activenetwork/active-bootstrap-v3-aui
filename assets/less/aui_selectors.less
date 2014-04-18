@@ -1,238 +1,154 @@
-
 .select {
-    border-color:@grayMedium;
-    .left-label {
-        float:left;
+  border-color:@grayMedium;
+    
+  .left-label {
+    float:left;
+  }
+  
+  .glyphicon-chevron-toggle {
+     float:right;
+     color:@cerulean;
+  }
+  
+  &.select-gradient {
+    background: -webkit-linear-gradient(@colorTheme4, @colorTheme5);
+    background: -o-linear-gradient(@colorTheme4, @colorTheme5);
+    background: -moz-linear-gradient(@colorTheme4, @colorTheme5);
+    background: linear-gradient(@colorTheme4, @colorTheme5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@colorTheme4, endColorstr=@colorTheme5);
+    
+    &:hover,
+    &:active,
+    &:focus {
+      background: -webkit-linear-gradient(@colorTheme5, @colorTheme4);
+      background: -o-linear-gradient(@colorTheme5, @colorTheme4);
+      background: -moz-linear-gradient(@colorTheme5, @colorTheme4);
+      background: linear-gradient(@colorTheme5, @colorTheme4);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@colorTheme5, endColorstr=@colorTheme4);
     }
-    .glyphicon-chevron-toggle {
-       float:right;
-       color:@cerulean;
-    }
+  }
+  
 }
 
 .input-lg {
   height:40px;
   padding-bottom:0px;
   padding-top:0px;
-}
-
-
-.input-lg.select {
-	height:40px;
-	padding:0;
-	
-  .glyphicon-chevron-toggle {
-	  margin-top:10px;
-    margin-right:12px;
+  
+  &.select {
+    height:40px;
+    padding:0;
+    
+    .glyphicon-chevron-toggle {
+      margin-top:10px;
+      margin-right:12px;
+    }
+    
+    .left-label {
+      padding-top:8px;
+    }
+    
   }
   
-  .left-label {
-    padding-top:8px;
+  .dropdown-menu > li > a {
+    height: 40px;
+    padding: 10px 16px;
+    font-size: 18px;
   }
+  
 }
 
-.input-lg .dropdown-menu {
-	>li {
-	    >a {
-		height: 40px;
-		padding: 10px 16px;
-		font-size: 18px;
-	       }
-	}
-}
-
-
-.btn-group.open .dropdown-toggle {
+.btn-group {
+  
+  &.open .dropdown-toggle {
     background-color:@colorTheme5;
-}
-
-.btn-group.open .dropdown-toggle .glyphicon-chevron-toggle:before {
-    content:"\e113";
-}
-
-.btn-group .dropdown-toggle .glyphicon-chevron-toggle:before {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    
+    .glyphicon-chevron-toggle:before {
+      content:"\e113";
+    }
+    
+  }
+  .dropdown-toggle .glyphicon-chevron-toggle:before {
     content:"\e114";
+  }
+  
 }
 
-.dropdown-menu {
-         .form-control {
-		border:none;
-		border-radius:0;
-    	 }
-}
-
-input[type="checkbox"], input[type="radio"] {
-	display:none;
- }
-
-.checkbox, .radio {
+.checkbox, 
+.radio {
 	padding-left:0;
 }
 
-.checkbox label:before {
-    content:"";
-    display:inline-block;
-    width:23px;
-    height:23px;
-    vertical-align:middle;
-    line-height:23px;
-    text-align:center;
-    border:solid 1px @grayMedium;
-    border-radius:4px;
-    margin-right:5px;
-    margin-left:0;
-}
-
-.input-sm.checkbox  {
-	>label:before {
- 		width:14px;
-   		height:14px;
-		line-height:14px;
-
-	}
-}
-
-.input-lg.checkbox  {
-	>label:before {
- 		width:30px;
-   		height:30px;
-		line-height:30px;
-
-	}
-}
-
-
-input[type="checkbox"]:checked + label:before {
-    content:"\e013";
-    color:@cerulean;
-    font-family:'Glyphicons Halflings';
-}
-
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"], 
+input[type="radio"] {
 	display:none;
- }
-
-.checkbox, .radio {
-	padding-left:0;
 }
 
+// checkbox
 .checkbox label:before {
-    content:"";
-    display:inline-block;
-    width:23px;
-    height:23px;
-    vertical-align:middle;
-    line-height:23px;
-    text-align:center;
-    border:solid 1px @grayMedium;
-    border-radius:4px;
-    margin-right:5px;
-    margin-left:0;
+  border:solid 1px @grayMedium;
+  border-radius:4px;
+  content:"";
+  display:inline-block;
+  height:23px;
+  line-height:23px;
+  margin-right:5px;
+  margin-left:0;
+  text-align:center;
+  vertical-align:middle;
+  width:23px;
 }
 
-.input-sm.checkbox  {
-	>label:before {
- 		width:14px;
-   		height:14px;
-		line-height:14px;
-
-	}
+.input-sm.checkbox > label:before {
+ 	height:14px;
+	line-height:14px;
+  width:14px;
 }
 
-.input-lg.checkbox  {
-	>label:before {
- 		width:30px;
-   		height:30px;
-		line-height:30px;
-
-	}
+.input-lg.checkbox > label:before {
+ 	height:30px;
+	line-height:30px;
+  width:30px;
 }
-
 
 input[type="checkbox"]:checked + label:before {
-    content:"\e013";
-    color:@cerulean;
-    font-family:'Glyphicons Halflings';
+  content:"\e013";
+  color:@cerulean;
+  font-family:'Glyphicons Halflings';
 }
-
-.input-sm.radio   {
-	>label:before {
- 		width:14px;
-   		height:14px;
-		font-size:24px;
-		line-height:10px;
-	}
-}
-
+// radio
 .radio label:before {
-    content:"";
-    display:inline-block;
-    width:25px;
-    height:25px;
-    vertical-align:middle;
-    line-height:16px;
-    text-align:center;
-    font-size:48px;
-    border:solid 1px @grayMedium;
-    border-radius:25px;
-    margin-right:5px;
+  border:solid 1px @grayMedium;
+  border-radius:25px;
+  content:"";
+  display:inline-block;
+  height:25px;
+  line-height:16px;
+  font-size:48px;
+  margin-right:5px;
+  text-align:center;
+  vertical-align:middle;
+  width:25px;
 }
 
-
-.input-lg.radio  {
-	>label:before {
- 		width:30px;
-   		height:30px;
-		font-size:66px;
-		line-height:18px;
-	}
+.input-sm.radio > label:before {
+ 	height:14px;
+	font-size:20px;
+	line-height:8px;
+  width:14px;
 }
 
+.input-lg.radio > label:before {
+ 	height:30px;
+	font-size:66px;
+	line-height:18px;
+	width:30px;
+}
 
 input[type="radio"]:checked + label:before {
-    content:"\2022";
-    color:@cerulean;
-
-}
-
-.radio label:before {
-    content:"";
-    display:inline-block;
-    width:25px;
-    height:25px;
-    vertical-align:middle;
-    line-height:16px;
-    text-align:center;
-    font-size:48px;
-    border:solid 1px @grayMedium;
-    border-radius:25px;
-    margin-right:5px;
-}
-
-.input-sm.radio  {
-	>label:before {
- 		width:14px;
-   		height:14px;
-		font-size:20px;
-		line-height:8px;
-
-	}
-}
-
-.input-lg.radio  {
-	>label:before {
- 		width:30px;
-   		height:30px;
-		font-size:66px;
-		line-height:18px;
-
-	}
-}
-
-
-input[type="radio"]:checked + label:before {
-    content:"\2022";
-    color:@cerulean;
-
+  color:@cerulean;
+  content:"\2022";
 }
 
