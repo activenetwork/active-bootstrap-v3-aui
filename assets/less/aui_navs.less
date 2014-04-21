@@ -46,7 +46,7 @@
   }
   
   > li  > a {
-    padding:0px;
+    padding:4px 0px 0px 0px;
     
     &:hover {
       background:none;
@@ -78,7 +78,11 @@
     > a {
       color:@colorTheme6;
       padding-bottom:15px;
-      padding-top:15px;
+      padding-top:13px;
+      
+      .glyphicon {
+        margin-right:6px;
+      }
       
       &:hover {
         background:@colorTheme1;
@@ -120,7 +124,7 @@
     
     > li > a {
       color:@colorTheme1;
-      padding-left:40px;
+      padding:8px 15px 10px 38px;
       
       &:hover,
       &:focus {
@@ -172,6 +176,19 @@
     
     a {
       color:@colorTheme1;
+    }
+    
+  }
+  
+  &.subnav-main-nosub {
+    
+    li a {
+      padding-left:22px;
+      
+      .glyphicon {
+        margin-right:7px;
+      }
+      
     }
     
   }
