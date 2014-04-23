@@ -19,31 +19,6 @@
   }
 }
 
-.input-group-btn {
-  
-  .dropdown-toggle.btn-default {
-    background:@colorTheme5;
-    border-color:#ccc;
-    color:#ccc;
-    font-size:16px;
-    min-width:28px;
-    width:28px;
-
-    &:hover,
-    &:focus {
-      background:@colorTheme5;
-      border-color:#ccc;
-      color:#ccc;
-    }
-  }
-  
-  .dropdown-menu {
-    margin: 10px 0px 0px 0px;
-    text-align:left;
-  }
-  
-}
-
 .open .dropdown-toggle.btn-default {
   
   &:hover,
@@ -97,6 +72,42 @@
     margin-right:10px;
   }
   
+  .input-group-btn {
+  
+    .dropdown-toggle.btn-default {
+      background:@colorTheme5;
+      border-color:#ccc;
+      color:#ccc;
+      font-size:16px;
+      min-width:28px;
+      width:28px;
+  
+      &:hover,
+      &:focus {
+        background:@colorTheme5;
+        border-color:#ccc;
+        color:#ccc;
+      }
+    }
+    
+    .dropdown-menu {
+      margin: 10px 0px 0px 0px;
+      text-align:left;
+      top:25px;
+    }
+    
+    .btn {
+      position:absolute;
+    }
+    
+    .btn .caret {
+      position:absolute;
+      top:12px;
+      left:10px;
+    }
+    
+  }
+  
 }
 
 .form-control-static {
@@ -124,5 +135,4 @@ input[type="file"] {
     
   }
   
-}
-
+} 
