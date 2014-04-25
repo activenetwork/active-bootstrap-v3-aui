@@ -1,79 +1,143 @@
 .add-on {
-    height:24px;
-    width:24px;
-    padding-top:7px;
-    padding-bottom:2px;
+  height:24px;
+  padding-top:7px;
+  padding-bottom:2px;
+  width:24px;
 }
-
 
 .add-on-group-inner {
-    position: relative;
-    > input {
-	 padding-left: 35px; 
-      }
-    > i {
-         position: absolute;
-         pointer-events: none;
-         padding-left:10px;
-         padding-right:10px;
-	.add-on
-    }
-}
-
-.input-group-btn {
+  position: relative;
   
-  .dropdown-toggle.btn-default {
-    background:@colorTheme5;
-    border-color:#ccc;
-    color:#ccc;
-    font-size:16px;
-    min-width:28px;
-    width:28px;
-
-    &:hover,
-    &:focus {
-      background:@colorTheme5;
-      border-color:#ccc;
-      color:#ccc;
-    }
+  > input {
+    padding-left: 35px; 
   }
   
-  .dropdown-menu {
-    margin: 10px 0px 0px 0px;
-    text-align:left;
+  > i {
+    position: absolute;
+    pointer-events: none;
+    padding:5px 10px;
   }
-  
 }
 
 .open .dropdown-toggle.btn-default {
+  
   &:hover,
   &:focus {
     background:@colorTheme5;
-    color:#ccc;
+    color:@grayCCC;
     outline: 0;
   }
+  
 }
 
 .tag-input {
-   padding:4px 5px 4px 5px;
-   .badge{
-       background:@rollingStone;
-       margin:0;
-      &:after {
-       color:#a5adb1;
-       content: " x";
-      }
-      &:hover,
-      &:focus {
-        background:@rollingStoneDarken15;
-        cursor:pointer;
-      }
-   }
+  padding:4px 5px 4px 5px;
+ 
+  > input {
+     height:20px;
+   } 
+  .badge {
+    background:@rollingStone;
+    margin:0;
+     
+    &:after {
+      color:#a5adb1;
+      content: " x";
+    }
+      
+    &:hover,
+    &:focus {
+      background:@rollingStoneDarken15;
+      cursor:pointer;
+    }
+    
+  }
+  
 }
 
 .textinput-checkbox{
-    color:@colorTheme6;
+  color:@colorTheme6;
 }
 
+.twitter-typeahead {
+   margin:0 0 0 24px;
+   height:24px;
+}
 
+.fancy-search-box {
+  
+  .form-group {
+    float:left;
+    margin-bottom:0px;
+    margin-right:5px;
+    width:60%;
+  }
+  
+  input {
+    margin-right:10px;
+  }
+  
+  .input-group-btn {
+  
+    .dropdown-toggle.btn-default {
+      background:@colorTheme5;
+      border-color:#ccc;
+      color:#ccc;
+      font-size:16px;
+      min-width:28px;
+      width:28px;
+  
+      &:hover,
+      &:focus {
+        background:@colorTheme5;
+        border-color:#ccc;
+        color:#ccc;
+      }
+    }
+    
+    .dropdown-menu {
+      margin: 10px 0px 0px 0px;
+      text-align:left;
+      top:25px;
+    }
+    
+    .btn {
+      position:absolute;
+    }
+    
+    .btn .caret {
+      position:absolute;
+      top:12px;
+      left:10px;
+    }
+    
+  }
+  
+}
 
+.form-control-static {
+	&.uneditable-field {
+	    padding-top:2px;
+	}
+}
+
+input[type="file"] {
+	padding-top:5px;
+ 	line-height:14px;
+}
+  
+@media (min-width: 768px) {
+  
+  .fancy-search-box {
+    
+    .form-group {
+      width:auto;
+    }
+    
+    input {
+      margin-right:5px;
+    }
+    
+  }
+  
+} 

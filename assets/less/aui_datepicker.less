@@ -1,0 +1,222 @@
+
+
+.ui-datepicker {
+	width: 230px;
+	padding: 5px 5px 5px 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 0;
+	width: 23px;
+	height: 23px;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top:0;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 6px;
+}
+
+.ui-datepicker .ui-datepicker-prev:after{
+    content:"\e079";
+    font-family:'Glyphicons Halflings';
+}
+
+.ui-datepicker .ui-datepicker-next:before {
+    content:"\e080";
+    font-family:'Glyphicons Halflings';
+}
+
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 6px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top: 30%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0;
+	line-height: 24px;
+	text-align: center;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+	margin:0 1px;
+	border:none;
+}
+.ui-datepicker th {
+	padding: 0;
+	text-align: center;
+	font-weight: bold;
+}
+.ui-datepicker td {
+	width:30px;
+	height:25px;
+	padding: 0 1px 0 1px;
+	border:none;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:@colorTheme6;
+}
+
+.ui-widget {
+	font-family: ProximaNovaRgRegular,Arial,sans-serif;
+	font-size: 14px;
+}
+.ui-widget .ui-widget {
+	font-size: 14px;
+}
+
+.ui-widget-content {
+	border: 1px solid @colorTheme5;
+	background: @colorTheme4;
+}
+.ui-widget-content a {
+	color: @colorTheme6;
+}
+.ui-widget-header {
+	background:none;
+	border:none;
+	color: @cerulean;
+	font-size:14px;
+	font-weight:bold;
+}
+.ui-widget-header a {
+	color: @cerulean;
+	text-decoration:none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: none;
+	background: none;
+	height:30px;
+	width:30px;
+	font-weight: normal;
+	color: @colorTheme6;
+	padding-top:5px;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	background-color:@cerulean;
+	color:@colorTheme4;
+	border-radius:4px;
+	border:none;
+}
+.ui-state-hover.ui-datepicker-prev-hover, .ui-state-hover.ui-datepicker-next-hover {
+	background:@colorTheme4;
+	color:@cerulean;
+	cursor:pointer;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	color: @colorTheme6;
+	background: @lobLolly;
+	margin:0;
+	border-radius:4px;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	color: @colorTheme6;
+	background: @colorTheme5;
+	margin:0;
+	border-radius:4px;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: @colorTheme6;
+}
+
+.ui-icon {
+	width: 23px;
+	height: 23px;
+	display:block;
+	text-indent:-99999px;
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: none;
+}
+.ui-widget-header .ui-icon {
+	background-image: none;
+}
+.ui-state-default .ui-icon {
+	background-image: none;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: none;
+}
+.ui-state-active .ui-icon {
+	background-image: none;
+}
+.ui-state-highlight .ui-icon {
+	background-image: none;
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: none;
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
