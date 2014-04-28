@@ -36,16 +36,14 @@
 
 .form-group {
   
-  .glyphicon-question-sign {
-    color:@colorTheme1;
-  }
   .glyphicon-chevron-down {
    color:@cerulean;
   }
   
   .help-tip {
-    display:inline-block;
+    color:@colorTheme1;
     cursor:pointer;
+    display:inline-block;
     margin:4px 0px 0px 15px;
   }
   
@@ -77,10 +75,18 @@
     font-size:16px;
   }
   
-  .help-inline, .glyphicon {
+  > span,
+  [class^="icon-"], [class*=" icon-"] {
     color: @alertRed;
     font-size:14px;
-  } 
+    position:relative;
+    top:1px;
+  }
+  
+  .help-block {
+    color: @alertRed;
+    font-style:normal;
+  }
   
 }
 
@@ -93,9 +99,12 @@
     font-size:16px;
   }
   
-  > span {
+  > span,
+  [class^="icon-"], [class*=" icon-"] {
     color: @alertOrange;
     font-size:14px;
+    position:relative;
+    top:1px;
   }
    
 } 
@@ -108,9 +117,12 @@
     font-size:16px;
   }
   
-  > span {
+  > span,
+  [class^="icon-"], [class*=" icon-"] {
     color: @alertGreen;
     font-size:14px;
+    position:relative;
+    top:1px;
   } 
   
 } 
@@ -226,7 +238,7 @@
     }
     
     .validation {
-      margin:4px 0px 0px -10px;
+      margin:2px 0px 0px -10px;
     }
     
   }
