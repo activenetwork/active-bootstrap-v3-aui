@@ -4,7 +4,7 @@
   
   a.product-logo,
   a.product-logo:hover {
-    background:url(images/sprite-logos.png) 0 -105px no-repeat;
+    background:url(/assets/sprite-logos.png) 0 -105px no-repeat;
     display:inline-block;
     font-size:0px;
     height:21px;
@@ -214,8 +214,18 @@
   .account{
     
     > li > a {
-      color:#999;
+      color:@white;
       padding:10px 20px;
+      
+      .caret {
+        color:@white;
+      }
+      
+      &:hover {
+        .caret {
+          color:#efaa23;
+        }
+      }
     }
     
     .avatar {
@@ -232,6 +242,14 @@
       padding-left:10px;
       padding-right:10px;
       text-transform:none;
+    }
+    
+    .open a.dropdown-toggle {
+      
+      .caret {
+        color:@white;
+      }
+      
     }
     
   }
