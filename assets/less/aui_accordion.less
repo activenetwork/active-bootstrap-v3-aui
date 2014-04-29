@@ -1,22 +1,32 @@
 .panel-default {
   border-color: @grayMedium;
   border-width: @border-md;
+  
+  .panel-heading {
+    color: @colorTheme6;
+    background-color: @colorTheme5;
+    border-color: @grayLight;
+  }
+  
 }
-.panel-default > .panel-heading {
-  color: @colorTheme6;
-  background-color: @colorTheme5;
-  border-color: @grayLight;
-}
-.panel-group .panel-heading + .panel-collapse .panel-body {
-  border-top-width: @border-md;
-  border-color: @grayMedium;
-}
-.panel-group .panel-heading i.indicator {
-  color: @colorTheme1;}
 
-.panel-group .panel-heading.disabled .indicator {
-  color:@grayDisabledText;
-}
-.panel-group .panel-heading.disabled  {
-  color:@grayDisabledText;
+.panel-group .panel-heading {
+  
+  + .panel-collapse .panel-body {
+    border-top-width: @border-md;
+    border-color: @grayMedium;
+  }
+  
+  i.indicator {
+    color: @colorTheme1;
+  }
+  
+  &.disabled  {
+    color:@grayDisabledText;
+  }
+  
+  &.disabled .indicator {
+    color:@grayDisabledText;
+  }
+  
 }
