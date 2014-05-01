@@ -225,7 +225,7 @@ ul.progress-steps {
   width:auto;
   
   li {
-    background:@colorTheme5 url(images/step-right.png) top right no-repeat;
+    background:@colorTheme5;
     border-bottom:1px solid @ghost;
     border-top:1px solid @ghost;
     color:@ghost;
@@ -234,9 +234,39 @@ ul.progress-steps {
     margin:0 -5px 0 0;
     padding:0 40px 0 20px;
     
+    &:before {
+      border-bottom: 20px solid transparent;
+      border-left: 16px solid #cccccc;
+      border-top: 20px solid transparent;
+      content: "";
+      display: inline-block;
+      opacity: 100;
+      position: absolute;
+      left: 0px;
+      top:-1px;
+      width: 0;
+      z-index: 90000;
+    }
+    
     &.current {
-      background:@colorTheme1 url(images/step-current-right.png) top right no-repeat;
+      background:@colorTheme1;
       color:@colorTheme4;
+      padding-left:35px;
+      padding-right: 20px;
+      position:relative;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme1;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
       
       &:last-child {
         background:@colorTheme1;
@@ -244,18 +274,56 @@ ul.progress-steps {
       
     }
     
-    &.past {
-      background:@colorTheme4 url(images/step-past.png) top right no-repeat;
+    &.next {
+      background-image:none;
+      position:relative;
+      padding-left:35px;
+      padding-right:20px;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme5;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
+      
     }
     
-    &.past-past {
-      background:@colorTheme4 url(images/step-past-past.png) top right no-repeat;
+    &.past {
+      background:@colorTheme4;
+      padding-left:35px;
+      padding-right:20px;
+      position:relative;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme4;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
+      
     }
     
     &:first-child {
       border-left:1px solid @ghost;
       border-bottom-left-radius:5px;
       border-top-left-radius:5px;
+      
+      &:before {
+        border:0px;
+      }
     }
     
     &:last-child {
@@ -263,7 +331,11 @@ ul.progress-steps {
       border-right:1px solid @ghost;
       border-bottom-right-radius:5px;
       border-top-right-radius:5px;
-      padding:0 20px 0 20px;
+      padding:0 20px 0 35px;
+      
+      &:after {
+        border:0px;
+      }
     }
     
   }
