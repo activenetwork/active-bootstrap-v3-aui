@@ -23,6 +23,14 @@ $(function(){
 		}		
 	});
 
+	$('.dropdown-toggle .checkbox').on( "click", function(e) {
+		var $target = $(e.target);
+		//if the checkbox is clicked prevent menu from opening
+		if ((e.offsetX > 1 && e.offsetX < 15 && !$target.is('.caret'))  
+		    || $target.is('input[type="checkbox"]')) { //stopping menu event causes checkbox event to be fired. Event needs to not be propagated after this
+			e.stopPropagation();
+		}	
+	 });
 
 	$('[data-toggle="dropdown"]').on('click', function() {
 		var $list = $($(this).closest('.btn-group').children('ul'));
