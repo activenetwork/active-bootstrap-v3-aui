@@ -1,48 +1,72 @@
 .subnav-large-container {
-  width:200px;
-  height:600px;
   background-color:@colorTheme5;
+  height:600px;
   padding-top:10px;
+  width:200px;
   
   .dropdown-toggle {
-    width:200px;
-    padding-top:14px;
-    padding-left:31px;
-    padding-bottom:14px;
-    font-family:"ProximaNovaLtSemibold" aui_icons, Arial, sans-serif; 
     cursor:pointer;
+    font-family:'ProximaNovaLtSemibold', Arial, sans-serif;
+    padding-top:10px;
+    padding-left:31px;
+    padding-bottom:10px;
+    width:200px; 
+    
     &:hover {
       background-color:@colorTheme1;
       color:@colorTheme4;
-    } 
+      
+      .icon-after-uniF054:after {
+        color:@colorTheme4;
+      }
+    }
+    
+    [class^="icon-"], 
+    [class*=" icon-"] {
+      padding-right:7px;
+    }
+     
   }
+  
   div.dropdown.open {
     background-color:@colorTheme4;
   }
+  
   .menu-title {
     border-bottom: 2px solid @colorTheme5;
+    color:@rollingStone;
+    font-family:'ProximaNovaLtSemibold', Arial, sans-serif;
+    display:block;
     margin-top:28px;
     margin-bottom: 13px;
-    padding-bottom:14px;
-    color:@rollingStone;
-    display:block;
     line-height:20px;
-  } 
+    padding-bottom:14px;
+  }
+   
   .dropdown-menu {
     padding:0px;
+    
+    li a:hover {
+      color:@colorTheme2;
+    }
   }
+  
   ul {
     padding-left:0px;
   }
+  
   li {
-    list-style:none;
-    padding-left:0px;
     font-size: 14px;
     line-height: 14px;
+    list-style:none;
     padding-bottom:14px;
+    padding-left:0px;
+    
     &.submenu {
+      font-family:'ProximaNovaLtSemibold', Arial, sans-serif;
       font-size:16px;
     }
+    
   }
 
   .container{
@@ -54,27 +78,35 @@
   }
 
   .dropdown-menu  {
-    margin-left: 200px;
-    margin-top: -46px;
     border:2px solid @colorTheme5;
     border-left:0px;
     border-radius: 0px 0px 7px 0px;
+    margin-left: 200px;
+    margin-top: -46px;
   }
+  
   .icon-after-uniF054:after {
+    color:@rollingStone;
     content:"\F054";
     position:absolute;
     right:21px;  
-    color:@rollingStone;
+    top:15px;  
   }
-  .open{
-      .icon-after-uniF054{
-	  &:after {
-            color:@colorTheme1;
-	  }
-	  &:hover:after {
-	    color:@colorTheme4;
-	  }
-      }   
+  
+  .open {
+      
+    .icon-after-uniF054 {
+        
+	    &:after {
+        color:@colorTheme1;      
+	    }
+	  
+	    &:hover:after {
+	      color:@colorTheme4;
+	    }
+	  
+    }   
+    
   }
 
 } 
