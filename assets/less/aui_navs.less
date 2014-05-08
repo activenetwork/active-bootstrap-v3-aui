@@ -215,6 +215,151 @@
   
 }
 
+.subnav-large-wrapper {
+  background:@colorTheme5;
+  margin-left:15px;
+  margin-right:15px;
+  
+  .subnav-large-menu {
+    padding-left:0px;
+    padding-right:0px;
+    
+    .subnav-large {
+      margin-left:0px;
+      padding-top:14px;
+      
+      > li {
+        
+        > a { 
+          color:@colorTheme6;
+          cursor:pointer;
+          padding: 14px 21px 14px 31px;
+          
+          .glyphicon, 
+          [class^="icon-"], 
+          [class*=" icon-"],
+          &:hover .glyphicon, 
+          &:hover [class^="icon-"], 
+          &:hover [class*=" icon-"] {
+            color:@colorTheme6;
+          }
+          
+          &:hover {
+            color:@colorTheme4;
+            cursor:pointer;
+            
+            .glyphicon, 
+            [class^="icon-"], 
+            [class*=" icon-"] {
+              color:@colorTheme1Darken30;
+            }
+          
+          }
+          
+          
+          
+          .icon-uniF054 {
+            color:@rollingStone;
+            float:right;
+            margin-right:0px !important;
+          }
+        
+        }
+        
+        &.active {
+          
+          a {
+            color:@colorTheme6;
+            
+            &:hover {
+              color:@colorTheme6;
+              
+              .glyphicon, 
+              [class^="icon-"], 
+              [class*=" icon-"] {
+                color:@colorTheme6;
+              }
+              
+            }
+            
+            .icon-uniF054,
+            &:hover .icon-uniF054 {
+              color:@cerulean;
+              float:right;
+            }
+            
+          }
+          
+        }
+  
+      }
+      
+    }
+    
+  }
+  
+  .subnav-large-content {
+    background:@colorTheme4;
+    
+    .subnav-large-content-inner {
+      padding-left:18px;
+    }
+    
+    .subnav-large-panel {
+      background:@colorTheme4;
+      border:2px solid @colorTheme5;
+      border-left:0px;
+      border-bottom-right-radius:10px;
+      height:100%;
+      left:0px;
+      min-height:100%;
+      position:absolute;
+      top:0px;
+      width:100%;
+      
+      .subnav-large-inner {
+        padding:28px;
+        
+        .title {
+          border-bottom:2px solid #E6EEF1;
+          color:#748288;
+          font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+          font-size:20px;
+          margin-bottom:13px;
+          margin-top:-6px;
+          padding-bottom:14px;
+        }
+        
+        .subtitle {
+          font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+          font-size:16px;
+          margin-bottom:7px;
+        }
+        
+        ul {
+          list-style:none;
+          margin:0px 0px 10px 0px;
+          padding:0px;
+          
+          li {
+            margin-bottom:7px;
+            
+            a:hover {
+              color:@colorTheme2;
+            }
+            
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+}
+
 ul.progress-steps {
   display:inline-block;
   font-size:16px;
