@@ -82,6 +82,11 @@
   
   input {
     margin-right:10px;
+    line-height:28px;
+    
+    &.input-lg {
+      line-height:38px;
+    }
   }
   
   .input-group-btn {
@@ -91,7 +96,7 @@
       border-color:#ccc;
       color:#ccc;
       font-size:16px;
-      min-width:28px;
+      min-width:0px;
       width:28px;
   
       &:hover,
@@ -114,7 +119,6 @@
     
     .btn .caret {
       position:absolute;
-      top:12px;
       left:10px;
     }
     
@@ -148,3 +152,10 @@ input[type="file"] {
   }
   
 } 
+
+input.form-control {
+  line-height:28px;
+}
+input.input-lg {
+  line-height:38px;
+}
