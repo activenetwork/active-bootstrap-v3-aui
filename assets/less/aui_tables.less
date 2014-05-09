@@ -64,44 +64,8 @@ table {
   
 }
 
-.caret {
-  
-  &.caret-reversed {
-    border-top-width: 0;
-    border-bottom: 4px solid @rollingStone;
-        
-    &.active {
-      border-bottom-color:@cerulean;
-    }
-  }
-  
-  &.active {
-    border-top-color:@cerulean;
-  }
-    
-}
-
-.sort-icons {
-  cursor:pointer;
-  display:inline-block;
-  height:4px;
-  position:relative;
-  width:10px;
-  
-  .caret {
-    position:absolute;
-    right:0px;
-    top:1px;
-    
-    &.caret-reversed {
-      position:absolute;
-      right:0px;
-      top:-6px;
-       
-    }
-    
-  }
-  
+.icon-active {
+  color:@cerulean;
 }
 
 .table-hover > tbody > tr:hover > td {

@@ -14,7 +14,7 @@
   .glyphicon-chevron-toggle {
      color:@cerulean;
      float:right;
-     margin-top:3px;
+     margin-top:1px;
      margin-right:-5px;
   }
   
@@ -43,6 +43,9 @@
     height:160px;
     overflow-y:auto
   } 
+   > li {
+        cursor:pointer;
+  }
 }
 
 .input-lg {
@@ -94,12 +97,14 @@
             box-shadow: none;
     
     .glyphicon-chevron-toggle:before {
-      content:"\e113";
+      font-family:'aui_icons';
+      content:'\f077';
     }
     
   }
   .dropdown-toggle .glyphicon-chevron-toggle:before {
-    content:"\e114";
+    font-family:'aui_icons';
+    content:'\f078';
   }
   
 }
@@ -147,9 +152,9 @@ input[type="radio"] {
 }
 
 input[type="checkbox"]:checked + label:before {
-  content:"\e013";
   color:@cerulean;
-  font-family:'Glyphicons Halflings';
+  font-family:'aui_icons';
+  content:'\f00c';
 }
 // radio
 .radio label:before {
@@ -158,13 +163,13 @@ input[type="checkbox"]:checked + label:before {
   border-radius:25px;
   content:"";
   display:inline-block;
-  height:25px;
-  line-height:16px;
-  font-size:48px;
-  margin-right:5px;
+  height:23px;
+  line-height:14px;
+  font-size:40px;
+  margin:0 5px 1px 0px;
   text-align:center;
   vertical-align:middle;
-  width:25px;
+  width:23px;
 }
 
 .input-sm.radio > label:before {

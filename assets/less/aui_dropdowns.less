@@ -39,7 +39,9 @@
     outline: 0;
     position:relative;
     
-    .glyphicon {
+    .glyphicon,
+    [class^="icon-"], 
+    [class*=" icon-"] {
       color:@alertGreen;
       position:absolute;
       top:4px;

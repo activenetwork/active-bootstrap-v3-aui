@@ -4,7 +4,7 @@
   
   a.product-logo,
   a.product-logo:hover {
-    background:url(images/sprite-logos.png) 0 -105px no-repeat;
+    background:url(/assets/sprite-logos.png) 0 -105px no-repeat;
     display:inline-block;
     font-size:0px;
     height:21px;
@@ -214,8 +214,18 @@
   .account{
     
     > li > a {
-      color:#999;
+      color:@white;
       padding:10px 20px;
+      
+      .caret {
+        color:@white;
+      }
+      
+      &:hover {
+        .caret {
+          color:#efaa23;
+        }
+      }
     }
     
     .avatar {
@@ -234,6 +244,14 @@
       text-transform:none;
     }
     
+    .open a.dropdown-toggle {
+      
+      .caret {
+        color:@white;
+      }
+      
+    }
+    
   }
   
   .navbar-right {
@@ -249,18 +267,22 @@
   .navbar-link {
     display: inline-block;
     font-size: 12px;
-    margin-top: 15px;
+    margin-top: 12px;
     
     &:hover {
       color:@white;
       text-decoration:none;
       
-      .glyphicon {
+      .glyphicon,
+      [class^="icon-"], 
+      [class*=" icon-"] {
           color:@white;
         }
     }
     
-    .glyphicon {
+    .glyphicon,
+    [class^="icon-"], 
+    [class*=" icon-"] {
       color:@grayLight;
       padding-top:0px;
       

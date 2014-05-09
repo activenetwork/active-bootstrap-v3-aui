@@ -88,8 +88,12 @@
       padding-bottom:15px;
       padding-top:13px;
       
-      .glyphicon {
+      .glyphicon,
+      [class^="icon-"], 
+      [class*=" icon-"] {
         margin-right:6px;
+        position:relative;
+        top:2px;
       }
       
       .glyphicon{
@@ -100,7 +104,9 @@
         background:@colorTheme1;
         color:@colorTheme4;
         
-        .glyphicon {
+        .glyphicon,
+        [class^="icon-"], 
+        [class*=" icon-"] {
           color:@colorTheme1Darken30;
         }
         
@@ -112,7 +118,9 @@
       background:@colorTheme4;
       color:@colorTheme1;
         
-      .glyphicon {
+      .glyphicon,
+      [class^="icon-"], 
+      [class*=" icon-"] {
         color:@colorTheme1;
       }
       
@@ -121,7 +129,9 @@
         cursor:default;
         background:@colorTheme4;
         
-        .glyphicon {
+        .glyphicon,
+        [class^="icon-"], 
+        [class*=" icon-"] {
           color:@colorTheme1;
         }
         
@@ -197,8 +207,156 @@
     li a {
       padding-left:22px;
       
-      .glyphicon {
+      .glyphicon,
+      [class^="icon-"], 
+      [class*=" icon-"] {
         margin-right:7px;
+      }
+      
+    }
+    
+  }
+  
+}
+
+.subnav-large-wrapper {
+  background:@colorTheme5 url(/assets/subnav-lg-bg.png) 50% repeat-y;
+  
+  margin-left:15px;
+  margin-right:15px;
+
+  .subnav-large-menu {
+    padding-left:0px;
+    padding-right:0px;
+    
+    .subnav-large {
+      margin-left:0px;
+      padding-top:14px;
+      
+      > li {
+        
+        > a { 
+          color:@colorTheme6;
+          cursor:pointer;
+          padding: 14px 21px 14px 31px;
+          
+          .glyphicon, 
+          [class^="icon-"], 
+          [class*=" icon-"],
+          &:hover .glyphicon, 
+          &:hover [class^="icon-"], 
+          &:hover [class*=" icon-"] {
+            color:@colorTheme6;
+          }
+          
+          &:hover {
+            color:@colorTheme4;
+            cursor:pointer;
+            
+            .glyphicon, 
+            [class^="icon-"], 
+            [class*=" icon-"] {
+              color:@colorTheme1Darken30;
+            }
+          
+          }
+          
+          
+          
+          .icon-uniF054 {
+            color:@rollingStone;
+            float:right;
+            margin-right:0px !important;
+          }
+        
+        }
+        
+        &.active {
+          
+          a {
+            color:@colorTheme6;
+            
+            &:hover {
+              color:@colorTheme6;
+              
+              .glyphicon, 
+              [class^="icon-"], 
+              [class*=" icon-"] {
+                color:@colorTheme6;
+              }
+              
+            }
+            
+            .icon-uniF054,
+            &:hover .icon-uniF054 {
+              color:@cerulean;
+              float:right;
+            }
+            
+          }
+          
+        }
+  
+      }
+      
+    }
+    
+  }
+  
+  .subnav-large-content {
+    background:@colorTheme4;
+    
+    .subnav-large-content-inner {
+      padding-left:18px;
+    }
+    
+    .subnav-large-panel {
+      background:@colorTheme4;
+      border:2px solid @colorTheme5;
+      border-left:0px;
+      border-bottom-right-radius:10px;
+      height:100%;
+      left:0px;
+      min-height:100%;
+      position:absolute;
+      top:0px;
+      width:100%;
+      
+      .subnav-large-inner {
+        padding:28px;
+        
+        .title {
+          border-bottom:2px solid #E6EEF1;
+          color:#748288;
+          font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+          font-size:20px;
+          margin-bottom:13px;
+          margin-top:-6px;
+          padding-bottom:14px;
+        }
+        
+        .subtitle {
+          font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
+          font-size:16px;
+          margin-bottom:7px;
+        }
+        
+        ul {
+          list-style:none;
+          margin:0px 0px 10px 0px;
+          padding:0px;
+          
+          li {
+            margin-bottom:7px;
+            
+            a:hover {
+              color:@colorTheme2;
+            }
+            
+          }
+          
+        }
+        
       }
       
     }
@@ -217,7 +375,7 @@ ul.progress-steps {
   width:auto;
   
   li {
-    background:@colorTheme5 url(images/step-right.png) top right no-repeat;
+    background:@colorTheme5;
     border-bottom:1px solid @ghost;
     border-top:1px solid @ghost;
     color:@ghost;
@@ -226,9 +384,39 @@ ul.progress-steps {
     margin:0 -5px 0 0;
     padding:0 40px 0 20px;
     
+    &:before {
+      border-bottom: 20px solid transparent;
+      border-left: 16px solid #cccccc;
+      border-top: 20px solid transparent;
+      content: "";
+      display: inline-block;
+      opacity: 100;
+      position: absolute;
+      left: 0px;
+      top:-1px;
+      width: 0;
+      z-index: 90000;
+    }
+    
     &.current {
-      background:@colorTheme1 url(images/step-current-right.png) top right no-repeat;
+      background:@colorTheme1;
       color:@colorTheme4;
+      padding-left:35px;
+      padding-right: 20px;
+      position:relative;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme1;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
       
       &:last-child {
         background:@colorTheme1;
@@ -236,18 +424,56 @@ ul.progress-steps {
       
     }
     
-    &.past {
-      background:@colorTheme4 url(images/step-past.png) top right no-repeat;
+    &.next {
+      background-image:none;
+      position:relative;
+      padding-left:35px;
+      padding-right:20px;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme5;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
+      
     }
     
-    &.past-past {
-      background:@colorTheme4 url(images/step-past-past.png) top right no-repeat;
+    &.past {
+      background:@colorTheme4;
+      padding-left:35px;
+      padding-right:20px;
+      position:relative;
+      
+      &:after {
+        border-bottom: 19px solid transparent;
+        border-left: 15px solid @colorTheme4;
+        border-top: 19px solid transparent;
+        content: "";
+        display: inline-block;
+        opacity: 100;
+        position: absolute;
+        right: -14px;
+        width: 0;
+        z-index: 100000;
+      }
+      
     }
     
     &:first-child {
       border-left:1px solid @ghost;
       border-bottom-left-radius:5px;
       border-top-left-radius:5px;
+      
+      &:before {
+        border:0px;
+      }
     }
     
     &:last-child {
@@ -255,7 +481,11 @@ ul.progress-steps {
       border-right:1px solid @ghost;
       border-bottom-right-radius:5px;
       border-top-right-radius:5px;
-      padding:0 20px 0 20px;
+      padding:0 20px 0 35px;
+      
+      &:after {
+        border:0px;
+      }
     }
     
   }
