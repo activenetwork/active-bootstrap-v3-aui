@@ -153,14 +153,16 @@ input[type="file"] {
   
 } 
 
-input::-ms-clear {
+input::-ms-clear,
+input::-ms-reveal {
   display: none;
 }
 
 input.form-control {
   line-height:28px;
   
-  &::-ms-clear {
+  &::-ms-clear,
+  &::-ms-reveal {
     display: none;
   }
   
