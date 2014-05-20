@@ -44,11 +44,14 @@
      height:20px;
    } 
   .badge {
+    font-size:@font-sm;
     background:@rollingStone;
     margin:0;
+    padding-bottom: 17px;	      
      
     &:after {
-      color:#a5adb1;
+      color:@ghostDarken15;
+      font-size:@font-sm;
       content: " x";
     }
       
@@ -82,23 +85,28 @@
   
   input {
     margin-right:10px;
+    line-height:28px;
+    
+    &.input-lg {
+      line-height:38px;
+    }
   }
   
   .input-group-btn {
   
     .dropdown-toggle.btn-default {
       background:@colorTheme5;
-      border-color:#ccc;
-      color:#ccc;
+      border-color:@grayCCC;
+      color:@grayCCC;
       font-size:16px;
-      min-width:28px;
+      min-width:0px;
       width:28px;
   
       &:hover,
       &:focus {
         background:@colorTheme5;
-        border-color:#ccc;
-        color:#ccc;
+        border-color:@grayCCC;
+        color:@grayCCC;
       }
     }
     
@@ -114,7 +122,6 @@
     
     .btn .caret {
       position:absolute;
-      top:12px;
       left:10px;
     }
     
@@ -148,3 +155,22 @@ input[type="file"] {
   }
   
 } 
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+input.form-control {
+  line-height:28px;
+  
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+  
+}
+
+input.input-lg {
+  line-height:38px;
+}

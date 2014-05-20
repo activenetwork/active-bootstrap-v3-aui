@@ -47,6 +47,21 @@
         cursor:pointer;
   }
 }
+.checkbox-dropdown {
+    .btn {
+        padding-left:34px !important;
+        padding-right:21px !important;
+    }
+    .checkbox {
+        position:absolute;
+        top:5px;
+        left:15px;
+	z-index:3;
+	padding:0;
+	margin:0 5px 0 0;
+	height:10px;    
+    }
+}
 
 .input-lg {
   height:40px;
@@ -121,6 +136,10 @@
 input[type="checkbox"], 
 input[type="radio"] {
 	display:none;
+	
+	/* IE8 will not have styled checkboxes and radio buttons */
+	display:block\9;
+	padding:5px 5px 0 20px\9;
 }
 
 // checkbox
@@ -137,6 +156,10 @@ input[type="radio"] {
   text-align:center;
   vertical-align:middle;
   width:23px;
+
+   /* IE8 will not have styled checkboxes */
+   display:none\9;
+
 }
 
 .input-sm.checkbox > label:before {
@@ -170,6 +193,10 @@ input[type="checkbox"]:checked + label:before {
   text-align:center;
   vertical-align:middle;
   width:23px;
+
+   /* IE8 will not have styled radio buttons */
+   display:none\9;
+
 }
 
 .input-sm.radio > label:before {
@@ -197,3 +224,4 @@ input[type="radio"]:checked + label:before {
     padding-left:0px;
   }
 }
+

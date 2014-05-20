@@ -50,7 +50,7 @@ $(function(){
 		var $target = e.currentTarget;
 		var clickPos = $target.clientWidth -  e.offsetX;
 		if (clickPos > 1 && clickPos < 10) {
-			$target.remove();
+			$($target).remove();
 			
 		}		
 		e.preventDefault();

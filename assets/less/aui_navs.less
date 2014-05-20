@@ -64,7 +64,7 @@
   }
       
   > li.active > a {
-    color:#313741;
+    color:@colorTheme6;
     
     &:hover {
       cursor:default;
@@ -315,6 +315,7 @@
       border:2px solid @colorTheme5;
       border-left:0px;
       border-bottom-right-radius:10px;
+      display:none;
       height:100%;
       left:0px;
       min-height:100%;
@@ -322,12 +323,16 @@
       top:0px;
       width:100%;
       
+      &.open{
+        display:block;
+      }
+      
       .subnav-large-inner {
         padding:28px;
         
         .title {
-          border-bottom:2px solid #E6EEF1;
-          color:#748288;
+          border-bottom:2px solid @colorTheme5;
+          color:@rollingStone;
           font-family: "ProximaNovaLtSemibold", Arial, sans-serif;
           font-size:20px;
           margin-bottom:13px;
@@ -386,7 +391,7 @@ ul.progress-steps {
     
     &:before {
       border-bottom: 20px solid transparent;
-      border-left: 16px solid #cccccc;
+      border-left: 16px solid @grayCCC;
       border-top: 20px solid transparent;
       content: "";
       display: inline-block;
